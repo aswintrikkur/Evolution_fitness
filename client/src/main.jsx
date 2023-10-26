@@ -1,9 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import 'typeface-roboto';
-import App from './App.jsx'
-import './style/Global.scss'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "typeface-roboto";
+import App from "./App.jsx";
+import "./style/Global.scss";
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <App />
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>
+);

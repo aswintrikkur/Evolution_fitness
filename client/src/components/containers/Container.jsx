@@ -7,7 +7,9 @@ export const Container = ({children}) => {
   return (
     <div className='container-container'>
       <Header />
+      
       {children}
+
       <Footer/>
     </div>
   )

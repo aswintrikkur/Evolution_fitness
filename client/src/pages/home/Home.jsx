@@ -4,6 +4,10 @@ import { Container } from "../../components/containers/Container";
 
 
 export const Home = () => {
+
+
+
+
 	return (
 		<Container>
 			
@@ -17,7 +21,10 @@ export const Home = () => {
 						<h3>what we offer</h3>
 						<hr />
 					</div>
+
+					
 					<div className="services">
+
 						{/* group-fitness-classed */}
 						<div className="service">
 							<div className="card">

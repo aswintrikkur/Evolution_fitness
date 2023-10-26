@@ -16,10 +16,7 @@
         // align-items: center;
         scale: .8;
 
-		img {
-            
-        }
-
+		
 		p {
             margin-left: 5px;
             height: 80px;
@@ -34,6 +31,10 @@
                 color: var(--color-secondary);
             }
 		}
+		img:hover , p:hover {
+			cursor: pointer;
+        }
+
 	}
 
 	.nav-bar {

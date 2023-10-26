@@ -1,0 +1,77 @@
+@import url('./Variable.scss');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+
+}
+::-webkit-scrollbar{
+	// width: 15px;
+	// opacity: 10%;
+	
+	// background-color: black;
+	
+	::-webkit-scrollbar-thumb{
+		// background-color: var(--color-secondary);
+		// background-color: red;
+	}
+}
+
+
+html {
+	/* overflow-x: hidden; */
+	scroll-behavior: smooth;
+}
+body {
+	font-family: roboto, sans-serif;
+	font-style: normal;
+	color: var(--color-primary);
+	background-color: var(--bg-color-secondary);
+}
+h2 {
+	font-size: 58px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 70px;
+	letter-spacing: -1px;
+}
+h3 {
+	font-size: 38px;
+	font-weight: 700;
+}
+h4 {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: -0.293px;
+}
+h5 {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: -.08px;
+	word-spacing: 3px;
+	line-height: 32px;
+}
+h6{
+	letter-spacing: .8px;
+	word-spacing: 3px;
+
+}
+p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 26px;
+}
+li {
+	list-style: none;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 26px;
+}
+
+button:hover, li:hover{
+	cursor: pointer;
+}

@@ -1,0 +1,76 @@
+.home-container {
+	.view-port-1 {
+		width: 100vw;
+		// height: 600px;
+		// overflow: hidden;
+
+		img {
+		}
+	}
+
+	.view-port-2 {
+		margin-top: 40px;
+		height: fit-content;
+		padding: 0 150px;
+        padding-bottom: 100px;
+
+		.title {
+			margin-bottom: 50px;
+
+			h3 {
+				padding: 30px 0;
+				// background-color: aqua;
+			}
+		}
+
+		.services {
+			padding: 0 50px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+			.service {
+				display: flex;
+				align-items: center;
+				gap: 80px;
+				// background-color: aqua;
+
+				.card {
+					width: 220px;
+					height: 140px;
+					background-color: var(--bg-color-secondary);
+					filter: contrast(110%);
+                    overflow: hidden;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+					border-radius: 2px;
+					background: var(----bg-color-secondary, rgba(235, 235, 235, 0.9));
+					box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+                    img{
+                        width: 94%;
+                    }
+				}
+                .card:hover > img{
+                    scale: 1.15;
+                    // rotate: 2deg;
+                    // translate: 0px 0px;
+                    transition: .5s ease-in-out;
+
+                }
+				.content {
+					h4 {
+						margin: 20px 0;
+					}
+					p {
+						width: 600px;
+					}
+				}
+			}
+		}
+	}
+}

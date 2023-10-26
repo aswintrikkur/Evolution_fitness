@@ -1,0 +1,61 @@
+.header-container {
+	height: 90px;
+	// width: 1440px;
+	width: 100vw;
+	padding-left: 10px;
+	padding-right: 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: var(--bg-color-primary);
+
+	.logo-container {
+		display: flex;
+        // align-items: center;
+        scale: .8;
+
+		img {
+            
+        }
+
+		p {
+            margin-left: 5px;
+            height: 80px;
+			font-size: 28px;
+			font-weight: bold;
+			display: flex;
+			flex-direction: column;
+            justify-content: flex-end;
+
+            span{
+                margin-top: 5px;
+                color: var(--color-secondary);
+            }
+		}
+	}
+
+	.nav-bar {
+		display: flex;
+
+		.item {
+			margin-right: 30px;
+            font-size: 16px;
+            font-weight: 500;
+
+		}
+        .item:hover, .item:focus{
+            color: var(--color-secondary);
+        }
+
+		.home {
+		}
+		.services {
+		}
+		.about {
+		}
+		.contact {
+		}
+	}
+}

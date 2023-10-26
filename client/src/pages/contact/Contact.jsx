@@ -6,14 +6,9 @@ export const Contact = () => {
 	return (
 		<Container>
 			<div className="contact-container">
-
-
-<div className="form">
-    
-</div>
-
-
-            </div>
+				<h3>Under development.....</h3>
+				<div className="form"></div>
+			</div>
 		</Container>
 	);
 };

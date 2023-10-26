@@ -1,24 +1,25 @@
-@import url('./Variable.scss');
+@import url("./Variable.scss");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-#root{
-
+#root {
 }
-::-webkit-scrollbar{
-	// width: 15px;
-	// opacity: 10%;
-	
-	// background-color: black;
-	
-	::-webkit-scrollbar-thumb{
-		// background-color: var(--color-secondary);
-		// background-color: red;
-	}
+
+//scroll bar
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-track {
+	background: var(--color-primary);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--bg-color-secondary);
+	border-radius: 10px;
 }
 
 
@@ -51,14 +52,13 @@ h4 {
 h5 {
 	font-size: 20px;
 	font-weight: 400;
-	letter-spacing: -.08px;
+	letter-spacing: -0.08px;
 	word-spacing: 3px;
 	line-height: 32px;
 }
-h6{
-	letter-spacing: .8px;
+h6 {
+	letter-spacing: 0.8px;
 	word-spacing: 3px;
-
 }
 p {
 	font-size: 16px;
@@ -72,6 +72,7 @@ li {
 	line-height: 26px;
 }
 
-button:hover, li:hover{
+button:hover,
+li:hover {
 	cursor: pointer;
 }

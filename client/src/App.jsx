@@ -16,11 +16,6 @@ function App() {
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<Error />} />
 			</Routes>
-
-			{/* <Home/> */}
-			{/* <Services /> */}
-			{/* <About/> */}
-			{/* <Contact/> */}
 		</div>
 	);
 }

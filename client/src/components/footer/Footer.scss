@@ -4,7 +4,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 100px;
+	padding-left: 60px;
+	padding-right: 100px;
 
 	background-color: var(--color-primary);
 	color: var(--bg-color-secondary);
@@ -21,7 +22,7 @@
 
 	.col2 {
             display: flex;
-            gap: 30px;
+            gap: 20px;
 			img {
                 scale: .8;
 			}

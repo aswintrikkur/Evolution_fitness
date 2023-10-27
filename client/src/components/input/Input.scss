@@ -1,0 +1,32 @@
+.input-container{
+
+    input{
+        width: 190px;
+        height: 25px;
+        margin: 8px 0px;
+        padding: 0 10px;
+
+        outline: none;
+        // border: 1px solid var(--bg-color-secondary);
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary) ;
+        border-radius: 8px;
+        background-color: transparent;
+
+        text-wrap: wrap;
+        word-break: break-all;
+        // line-break: ;
+        // overflow:hidden ;
+
+
+        &::placeholder{
+            // color: var(--bg-color-secondary) ;
+            color: var(--color-primary) ;
+            
+        }    
+
+        
+    }
+    
+
+}

@@ -9,12 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { API } from "../../api";
 
 export const Contact = () => {
-	const [temp, setTemp] = useState({
-		name: "",
-		email: "",
-		service: "",
-		message: "",
-	});
+	const [temp, setTemp] = useState({});
 
 	const handleChange = (event) => {
 		// console.log(event.target.name,'====',event.target.value);
@@ -32,7 +27,7 @@ export const Contact = () => {
 			toast.success( response.data.message, {
 				position: "top-center",
 				});
-			setTemp({ name: "", email: "", service: "", message: "" });
+			setTemp({});
 			console.log(response.data.message);
 		} catch (error) {
 			// console.log(error.response.data.message);

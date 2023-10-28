@@ -6,6 +6,7 @@ import axios from "axios";
 import 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from "react-toastify";
+import { API } from "../../api";
 
 export const Contact = () => {
 	const [temp, setTemp] = useState({
@@ -23,7 +24,8 @@ export const Contact = () => {
 
 	const handleSubmit = async () => {
 		try {
-			const response = await axios(`${import.meta.env.VITE_API_URL}/api/customer`, {
+			console.log(API);
+			const response = await axios(`${API}/api/customer`, {
 				method: "POST",
 				data: temp,
 			});

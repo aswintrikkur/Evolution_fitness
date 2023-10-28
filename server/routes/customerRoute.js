@@ -6,9 +6,8 @@ router.post('/', async (req, res) => {
     try {
 
         const { name, email, service, message } = req.body;
-        console.log(req.body);
         const dbResponse = await Customer.create({ name, email, service, message })
-        res.json({
+        res.status(200).json({
             message: 'successful'
         })
 

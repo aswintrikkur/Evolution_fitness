@@ -1,3 +1,4 @@
+const { timeStamp } = require('console');
 const mongoose = require('mongoose');
 
 const customerSchema = new mongoose.Schema({
@@ -18,7 +19,8 @@ const customerSchema = new mongoose.Schema({
     message: {
         type: String,
     }
-});
+}, {timestamps:true}
+);
 const Customer = mongoose.model('Customer', customerSchema);
 
 module.exports = { Customer }

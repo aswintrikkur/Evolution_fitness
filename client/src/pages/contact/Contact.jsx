@@ -3,44 +3,48 @@ import "./Contact.scss";
 import { Container } from "../../components/containers/Container";
 import { Input } from "../../components/input/Input";
 import axios from "axios";
-import 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import { API } from "../../api";
 
 export const Contact = () => {
-	const [temp, setTemp] = useState({});
+	const [temp, setTemp] = useState({
+		name: "",
+		email: "",
+		service: "",
+		message: "",
+	});
 
 	const handleChange = (event) => {
 		// console.log(event.target.name,'====',event.target.value);
 		setTemp((prev) => ({ ...prev, [event.target.name]: event.target.value }));
 	};
-	console.log(temp);
 
 	const handleSubmit = async () => {
 		try {
-			console.log(API);
+			const { name, email, service, message } = temp;
+			const data = { name, email, message, service: service || "weight training sessions" };
+
 			const response = await axios(`${API}/api/customer`, {
 				method: "POST",
-				data: temp,
+				data,
 			});
-			toast.success( response.data.message, {
+			toast.success(response.data.message, {
 				position: "top-center",
-				});
-			setTemp({});
-			console.log(response.data.message);
+			});
+			setTemp({ name: "", email: "", service: "", message: "" });
 		} catch (error) {
-			// console.log(error.response.data.message);
-			toast.error('something went wrong!',{
-				position:'top-center'
-			})
+			toast.error("something went wrong!", {
+				position: "top-center",
+			});
 		}
 	};
 
 	return (
 		<Container>
 			<div className="contact-container">
-			<ToastContainer/>
+				<ToastContainer />
 				<div className="col1">
 					<div className="form">
 						<h4>For any queries</h4>
